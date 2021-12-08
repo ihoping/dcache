@@ -20,6 +20,8 @@ func (f GetterFunc) Get(key string) ([]byte, error) {
 	return f(key)
 }
 
+//TODO maxMemory、
+
 //Group 一个group对应一个缓存空间
 type Group struct {
 	name      string
